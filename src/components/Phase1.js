@@ -50,10 +50,10 @@ export default function Phase1() {
       <div className='bg-[#F7F1E8] w-[100%] mx-auto md:flex block border-b-2 border-[black] pt-[1rem] md:pt-[0] '>
         <div className=' md:w-[51%] w-[100%] '>
           <div className='text-[20px] ml-[2rem] mt-[2rem] font-[Inter,sans-serif]'>
-            <h1>What they've said</h1>
+            <h1>What theyve said</h1>
           </div>
           <div className='text-[22px] ml-[2rem] mt-[5rem] font-[Inter,sans-serif]'>
-            <p>"Totally natural and non-toxic, this Eym candle offers a <br className='hidden md:block' /> mellowing scent – think frankincense and patchouli– <br className='hidden md:block' /> without the compromising your immediate environment."</p>
+            <p>Totally natural and non-toxic, this Eym candle offers a <br className='hidden md:block' /> mellowing scent – think frankincense and patchouli– <br className='hidden md:block' /> without the compromising your immediate environment.</p>
           </div>
 
           <div className='grid grid-cols-4  md:mt-[10rem] mt-[2rem] ml-[2rem] '>
