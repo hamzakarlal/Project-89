@@ -4,6 +4,8 @@ import Logoone from 'public/assets/logo1.png'
 import Logotwo from 'public/assets/logo2.png'
 import Logothree from 'public/assets/logo3.png'
 import Logofour from 'public/assets/logo4.png'
+import div6 from 'public/assets/div6.png'
+import div5 from 'public/assets/div5.png'
 
 
 export default function Phase1() {
@@ -41,7 +43,7 @@ export default function Phase1() {
          
         </div>
         <div className='w-[49%] lg:block hidden border-l-2 border-[black]'>
-          <img className='w-[90%] mt-[2rem] mb-[2rem] mx-auto flex items-center' src="assets/div5.png" alt=""></img>
+          <Image className='w-[90%]  mt-[2rem] mb-[2rem] mx-auto flex items-center' src={div5} width='' height='' alt='not-found'/>
         </div>
       </div>
       {/* 2 */}
@@ -56,23 +58,23 @@ export default function Phase1() {
 
           <div className='grid grid-cols-4  md:mt-[10rem] mt-[2rem] ml-[2rem] '>
             <div>
-              <Image className='md:w-[8rem] w-[5rem]' src={Logoone} width='' height=''/>
+              <Image className='md:w-[8rem] w-[5rem]' src={Logoone} width='' height='' alt='not-found'/>
             </div>
             <div>
-              <Image className='md:w-[8rem] w-[5rem]' src={Logotwo} width='' height=''/>
+              <Image className='md:w-[8rem] w-[5rem]' src={Logotwo} width='' height='' alt='not-found'/>
             </div>
             <div>
-              <Image className='md:w-[8rem] w-[5rem]' src={Logothree} width='' height=''/>
+              <Image className='md:w-[8rem] w-[5rem]' src={Logothree} width='' height='' alt='not-found'/>
             </div>
             <div>
-              <Image className='md:w-[8rem] w-[5rem]' src={Logofour} width='' height=''/>
+              <Image className='md:w-[8rem] w-[5rem]' src={Logofour} width='' height='' alt='not-found'/>
             </div>
           </div>
 
          
         </div>
         <div className='md:w-[49%] w-[100%] border-l-2 border-[black]'>
-          <img className='w-[90%]  mt-[2rem] mb-[2rem] mx-auto flex items-center' src="assets/div6.png" alt=""></img>
+          <Image className='w-[90%]  mt-[2rem] mb-[2rem] mx-auto flex items-center' src={div6} width='' height='' alt='not-found'/>
         </div>
       </div>
 

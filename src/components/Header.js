@@ -2,6 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 import DivOne from 'public/assets/div1.png'
 import Menu from 'public/assets/menu.png'
+import Frame from 'public/assets/Frame.png'
+import div from 'public/assets/div.png'
+
+
 export default function Header() {
   <link rel="preconnect" href="https://fonts.googleapis.com"></link>
   return (
@@ -14,7 +18,7 @@ export default function Header() {
         <div className=" flex ">
           <div className="flex ">
             <div className='md:hidden block'>
-            <Image className='w-[70%]' src={Menu} width="" height=""/>
+            <Image className='w-[70%]' src={Menu} width="" height="" alt='not-found'/>
             </div>
             <ul
               className=" font-[Inter,sans-serif] md:flex justify-center gap-[2.8rem] xl:text-[18px] md:text-[13px] hidden   "
@@ -30,11 +34,7 @@ export default function Header() {
         </div>
         <div className=" flex justify-between font-[Inter,sans-serif] xl:text-[18px] lg:text-[13.5px]">
         <div className="flex justify-start ">
-              <img
-                className="w-[69%] h-[auto] mx-auto ml-[-28px]"
-                src="assets/Frame.png"
-                alt=""
-              />
+              <Image className='w-[69%] h-[auto] mx-auto ml-[-28px]' src={Frame} width='' height='' alt='not-found'/>
             </div>
           <h1 className=''>Cart</h1>
         </div>
@@ -43,7 +43,7 @@ export default function Header() {
      {/* hero */}
       <div className="bg-[#F5EEE3] w-[100%] mx-auto md:flex  pt-[4rem] ">
         <div className=" md:w-[51%] w-[100%] border-r-2 border-[grey]" >
-          <img src="assets/div.png" alt="" />
+          <Image src={div} width="" height="" alt='not-found'/>
         </div>
         <div className="border-b-2 border-[grey] md:w-[49%] w-[100%] flex justify-center text-center lg:items-center md:pt-[8rem]">
           <div className="center h-[10%] items-center leading-[3rem] pb-[2rem] md:pb-[0] pt-[2rem] md:pt-0 ">
@@ -102,7 +102,7 @@ export default function Header() {
           </div>
         </div>
         <div className='md:w-[49%] w-[100%] border-l-2 border-[grey]'>
-          <Image src={DivOne} width="" height=""/>
+          <Image src={DivOne} width="" height="" alt='not-found'/>
         </div>
       </div>
 

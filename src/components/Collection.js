@@ -1,4 +1,8 @@
 import React from 'react'
+import Image from 'next/image'
+import div4 from 'public/assets/div4.png'
+import div3 from 'public/assets/div3.png'
+import div2 from 'public/assets/div2.png'
 
 export default function Collection() {
   <link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -17,7 +21,7 @@ export default function Collection() {
                 <p className='text-[12px]'>Top Rated: 5 / 5</p>
         </div>
           <div >
-            <img className='w-[88%] mx-auto' src="assets/div2.png" alt="" />
+          <Image className='w-[88%]' src={div2} width='' height='' alt='not-found'/>
           </div>
 
         <div className='mt-[13px] w-[88%]  mx-auto sm:mx-auto'>
@@ -44,7 +48,7 @@ export default function Collection() {
                   <p className='text-[12px]'>Top Rated: 5 / 5</p>
           </div>
             <div >
-              <img className='w-[88%] mx-auto' src="assets/div3.png" alt="" />
+            <Image className='w-[88%]' src={div3} width='' height='' alt='not-found'/>
             </div>
   
           <div className='w-[88%]  mx-auto sm:mx-auto'>
@@ -62,7 +66,7 @@ export default function Collection() {
             </div>
             </div>
 
-          <div className=' border-2 w-[rem] h-[30px] hidden  border-[grey] rounded-2xl bg-[#F7F1E8] px-[5px] flex items-center ml-[12px] mt-[13px] '>
+          <div className=' border-2 w-[rem] h-[30px] hidden border-[grey] rounded-2xl bg-[#F7F1E8] px-[5px] flex items-center ml-[12px] mt-[13px] '>
                   <p className='text-[6px] font-[700]'>Coming soon</p>
           </div>
   
@@ -77,7 +81,7 @@ export default function Collection() {
                   <p className='text-[12px]'>Top Rated: 5 / 5</p>
           </div>
             <div >
-              <img className='w-[88%] mx-auto' src="assets/div4.png" alt="" />
+            <Image className='w-[88%]' src={div4} width='' height='' alt='not-found'/>
             </div>
   
           <div className='mt-[13px] w-[88%]  mx-auto sm:mx-auto'>
@@ -104,7 +108,7 @@ export default function Collection() {
                   <p className='text-[12px]'>Top Rated: 5 / 5</p>
           </div>
             <div >
-              <img className='w-[88%] mx-auto' src="assets/div4.png" alt="" />
+            <Image className='w-[88%]' src={div4} width='' height='' alt='not-found'/>
             </div>
   
           <div className='mt-[13px] w-[88%]  mx-auto sm:mx-auto'>
@@ -131,7 +135,7 @@ export default function Collection() {
                   <p className='text-[12px]'>Top Rated: 5 / 5</p>
           </div>
             <div >
-              <img className='w-[88%] mx-auto' src="assets/div4.png" alt="" />
+            <Image className='w-[88%]' src={div4} width='' height='' alt='not-found'/>
             </div>
   
           <div className='mt-[13px] w-[88%]  mx-auto sm:mx-auto'>
@@ -158,7 +162,7 @@ export default function Collection() {
                   <p className='text-[12px]'>Top Rated: 5 / 5</p>
           </div>
             <div >
-              <img className='w-[88%] mx-auto' src="assets/div4.png" alt="" />
+            <Image className='w-[88%]' src={div4} width='' height='' alt='not-found'/>
             </div>
   
           <div className='mt-[13px] w-[88%]  mx-auto sm:mx-auto'>
@@ -185,7 +189,7 @@ export default function Collection() {
                   <p className='text-[12px]'>Top Rated: 5 / 5</p>
           </div>
             <div >
-              <img className='w-[88%] mx-auto' src="assets/div4.png" alt="" />
+            <Image className='w-[88%]' src={div4} width='' height='' alt='not-found'/>
             </div>
   
           <div className='mt-[13px] w-[88%]  mx-auto sm:mx-auto'>

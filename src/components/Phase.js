@@ -1,4 +1,8 @@
 import React from 'react'
+import Image from 'next/image'
+import icon1 from 'public/assets/icon1.png'
+import icon from 'public/assets/icon.png'
+import icon2 from 'public/assets/icon2.png'
 
 export default function Phase() {
   <link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -15,7 +19,7 @@ export default function Phase() {
         <div className='pt-[5rem] md:leading-[5rem] leading-[3rem]  '>
           <div className='pl-[2rem] md:pl-[0] pb-[2rem] md:pb-[0]  '>
           <div>
-            <img className='md:w-[18%] w-[20%]' src="assets/icon.png" alt=""/>
+            <Image className='md:w-[18%] w-[20%]' src={icon} width='' height='' alt='not-found'/>
           </div>
           <div>
             <h1>1. Only 100% natural fragrance</h1>
@@ -32,7 +36,7 @@ export default function Phase() {
           <div className='pt-[5rem] md:leading-[5rem] leading-[3rem]'>
             <div className='pl-[2rem] md:pl-[0] pb-[2rem] md:pb-[0]'>
           <div>
-            <img className='md:w-[18%] w-[20%]' src="assets/icon1.png" alt=""/>
+            <Image className='md:w-[18%] w-[20%]' src={icon1} width='' height='' alt='not-found'/>
           </div>
           <div>
             <h1>2. The power of natural perfume</h1>
@@ -49,7 +53,7 @@ export default function Phase() {
           {/* 3 */}
           <div className='pt-[5rem] md:leading-[5rem] leading-[3rem] pl-[2rem] md:pl-[0] pb-[2rem] md:pb-[0]'>
           <div>
-            <img className='md:w-[18%] w-[20%]' src="assets/icon2.png" alt=""/>
+            <Image className='md:w-[18%] w-[20%]' src={icon2} width='' height='' alt='not-found'/>
           </div>
           <div>
             <h1>3. Created consciously</h1>

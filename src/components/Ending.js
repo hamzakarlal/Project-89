@@ -19,16 +19,16 @@ export default function Ending() {
           </div>
           <div className='grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 mt-[1rem] ml-[2rem] mb-[2rem]'>
             <div className='pb-[1rem] md:pb-[0]'>
-              <Image className='w-[90%]' src={Micone} width='' height=''/>
+              <Image className='w-[90%]' src={Micone} width='' height='' alt='not-found'/>
             </div>
             <div className='pb-[1rem] md:pb-[0]'>
-              <Image className='w-[90%]' src={Mictwo} width='' height=''/>
+              <Image className='w-[90%]' src={Mictwo} width='' height='' alt='not-found'/>
             </div>
             <div className='pb-[1rem] md:pb-[0]'>
-              <Image className='w-[90%]' src={Micthree} width='' height=''/>
+              <Image className='w-[90%]' src={Micthree} width='' height='' alt='not-found'/>
             </div>
             <div className='pb-[1rem] md:pb-[0]'>
-              <Image className='w-[90%]' src={Micfour} width='' height=''/>
+              <Image className='w-[90%]' src={Micfour} width='' height='' alt='not-found'/>
             </div>
           </div>
 
