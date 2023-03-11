@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function index() {
+export default function Phase() {
   <link rel="preconnect" href="https://fonts.googleapis.com"></link>
   return (
     <div className='max-w-[1400px] mx-auto bg-[#F7F1E8] border-b-2 border-[black] pb-[3rem]'>

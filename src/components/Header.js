@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import DivOne from 'public/assets/div1.png'
 import Menu from 'public/assets/menu.png'
-export default function index() {
+export default function Header() {
   <link rel="preconnect" href="https://fonts.googleapis.com"></link>
   return (
     <div>

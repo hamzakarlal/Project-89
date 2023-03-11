@@ -5,7 +5,7 @@ import Mictwo from 'public/assets/mic2.png'
 import Micthree from 'public/assets/mic3.png'
 import Micfour from 'public/assets/mic4.png'
 
-export default function index() {
+export default function Ending() {
     <link rel="preconnect" href="https://fonts.googleapis.com"></link>
   return (
     <div className='max-w-[1400px] mx-auto'>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function index() {
+export default function Collection() {
   <link rel="preconnect" href="https://fonts.googleapis.com"></link>
   return (
     <div className='max-w-[1400px] mx-auto border-b border-[black] ' >

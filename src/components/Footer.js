@@ -3,7 +3,7 @@ import Image from 'next/image'
 import svg from 'public/assets/svg.png'
 import svgone from 'public/assets/svg1.png'
 
-export default function index() {
+export default function Footer() {
   return (
     <div className='max-w-[1400px] mx-auto '>
       <div className=' font-[Inter,sans-serif] w-[100%] bg-[#F7F1E8] pt-[2rem] '>
