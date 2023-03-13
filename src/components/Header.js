@@ -1,13 +1,19 @@
-import React from 'react'
+
 import Image from 'next/image'
 import DivOne from 'public/assets/div1.png'
 import Menu from 'public/assets/menu.png'
 import Frame from 'public/assets/Frame.png'
 import div from 'public/assets/div.png'
+import React, { useState } from 'react';
 
 
 export default function Header() {
   <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+  const [showDiv, setShowDiv] = useState(false);
+
+  const handleClick = () => {
+    setShowDiv(!showDiv);
+  }
   return (
     <div>
       <div className=" max-w-[1400px] mx-auto">
@@ -18,7 +24,30 @@ export default function Header() {
         <div className=" flex ">
           <div className="flex ">
             <div className='md:hidden block'>
-            <Image className='w-[70%]' src={Menu} width="" height="" alt='not-found'/>
+            <Image className='w-[70%]' src={Menu} width="" height="" alt='not-found' onClick={handleClick}/>
+            {showDiv && <div className=' pl-[5px] rounded-3xl border-[1px]  absolute bg-[#f7f7f7] w-[200px]  h-[auto]'>
+            <ul
+              className=" font-[Inter,sans-serif] text-[13px] font-[500] ml-[10px]   "
+            >
+              <h1 className='mt-[5px] mb-[5px] text-[grey] font-[300] '>Our Services</h1>
+              <div className='hover:text-[white] hover:bg-[grey] rounded-3xl w-[80px]  '>
+              <li className='ml-[5px]'>Home</li>  
+              </div>
+              <div className='hover:text-[white] hover:bg-[grey] rounded-3xl w-[80px]  '>
+              <li className='ml-[5px]'>About</li>  
+              </div>
+              <div className='hover:text-[white] hover:bg-[grey] rounded-3xl w-[80px]  '>
+              <li className='ml-[5px]'>Gallery</li>  
+              </div>
+              <div className='hover:text-[white] hover:bg-[grey] rounded-3xl w-[80px]  '>
+              <li className='ml-[5px]'>Blogs</li>  
+              </div>
+              <div className='hover:text-[white] hover:bg-[grey] rounded-3xl w-[80px]  '>
+              <li className='ml-[5px]'>Our Story</li>  
+              </div>
+            </ul>
+               
+              </div>}
             </div>
             <ul
               className=" font-[Inter,sans-serif] md:flex justify-center gap-[2.8rem] xl:text-[18px] md:text-[13px] hidden   "
