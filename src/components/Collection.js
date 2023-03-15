@@ -7,7 +7,8 @@ import div2 from 'public/assets/div2.png'
 export default function Collection() {
   <link rel="preconnect" href="https://fonts.googleapis.com"></link>
   return (
-    <div className='max-w-[1400px] mx-auto border-b border-[black] ' >
+    <div className='bg-[#F7F1E8] border-b border-[black]'>
+          <div className='max-w-[1400px] mx-auto  ' >
       <div className=' font-[Inter,sans-serif] font-[400]  w-[100%] bg-[#F7F1E8] text-[25px] py-[22px] px-[22px] pb-[3rem]'>
         <div>
         <h1>Shop collection</h1>  
@@ -216,5 +217,7 @@ export default function Collection() {
 
       </div>
     </div>
+    </div>
+
   )
 }

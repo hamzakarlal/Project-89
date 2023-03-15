@@ -5,7 +5,8 @@ import svgone from 'public/assets/svg1.png'
 
 export default function Footer() {
   return (
-    <div className='max-w-[1400px] mx-auto '>
+    <div className='bg-[#F7F1E8]'>
+          <div className='max-w-[1400px] mx-auto '>
       <div className=' font-[Inter,sans-serif] w-[100%] bg-[#F7F1E8] pt-[2rem] '>
         <div className='grid lg:grid-cols-2  block '>
           <div className='font-[600] text-[20px] sm:pl-[2rem] text-center'>
@@ -26,10 +27,10 @@ export default function Footer() {
             <div>
               <form className='sm:w-[80%] w-[100%] bg-[#F7F1E8]'>
                 <span className='sm:flex block '>
-                  <input className='sm:w-[50%] w-[100%] border-[1px] bg-[#F7F1E8] pl-2 border-[black] py-[10px] ' type="text" placeholder='First name' name="" value=""/>
-                  <input className='sm:w-[50%] w-[100%] border-[1px] border-t-0 sm:border-t-[1px]  bg-[#F7F1E8] pl-2 border-l-0 border-[black] border-l-[1px] py-[10px] sm:py-auto' type="text" placeholder='Last name' name="" value=""/>
+                  <input className='sm:w-[50%] w-[100%] border-[1px] bg-[#F7F1E8] pl-2 border-[black] py-[10px] ' type="text" placeholder='First name'/>
+                  <input className='sm:w-[50%] w-[100%] border-[1px] border-t-0 sm:border-t-[1px]  bg-[#F7F1E8] pl-2 border-l-0 border-[black] border-l-[1px] py-[10px] sm:py-auto' type="text" placeholder='Last name'/>
                 </span>
-                 <input className='w-[100%] border-b-[1px] bg-[#F7F1E8] pl-2 border-l-[1px] border-r-[1px] border-[black] py-[10px] ' type="text" placeholder='Email' name="" value=""/>
+                 <input type="email" className='w-[100%] border-b-[1px] bg-[#F7F1E8] pl-2 border-l-[1px] border-r-[1px] border-[black] py-[10px] ' placeholder='Email'/>
                   <button type="" className='text-[white]  w-[100%] py-[10px] bg-black text-center'>
                       <h1>Subscribe</h1>
                   </button>
@@ -79,5 +80,7 @@ export default function Footer() {
         
       </div>
     </div>
+    </div>
+
   )
 }

@@ -11,8 +11,9 @@ import div5 from 'public/assets/div5.png'
 export default function Phase1() {
   <link rel="preconnect" href="https://fonts.googleapis.com"></link>
   return (
-    <div className='max-w-[1400px] mx-auto '>
-         <div className='bg-[#F7F1E8] pt-[1rem] lg:pt-[0] w-[100%] mx-auto lg:flex block border-b-2 border-[black] pb-[1rem] md:pb-[0] '>
+    <div className='bg-[#F7F1E8]'>
+          <div className='max-w-[1400px] mx-auto '>
+         <div className='bg-[#F7F1E8] pt-[1rem] lg:pt-[0] w-[100%] mx-auto lg:flex border-l-2 border-[black]  block border-b-2 border-[black] pb-[1rem] md:pb-[0] '>
         <div className=' lg:w-[51%] w-[100%] '>
           <div className='md:text-[24px] sm:text-[12px] text-[10px] ml-[2rem] md:mt-[2rem] mt-[0rem] font-[Inter,sans-serif] '>
             <h1>Find the right scent for your mood ↓</h1>
@@ -42,12 +43,12 @@ export default function Phase1() {
         </div>
          
         </div>
-        <div className='w-[49%] lg:block hidden border-l-2 border-[black]'>
+        <div className='w-[49%] lg:block hidden border-l-2 border-r-2 border-[black]'>
           <Image className='w-[90%]  mt-[2rem] mb-[2rem] mx-auto flex items-center' src={div5} width='' height='' alt='not-found'/>
         </div>
       </div>
       {/* 2 */}
-      <div className='bg-[#F7F1E8] w-[100%] mx-auto md:flex block border-b-2 border-[black] pt-[1rem] md:pt-[0] '>
+      <div className='bg-[#F7F1E8] w-[100%] border-l-2 mx-auto md:flex block border-b-2 border-[black] pt-[1rem] md:pt-[0] '>
         <div className=' md:w-[51%] w-[100%] '>
           <div className='text-[20px] ml-[2rem] mt-[2rem] font-[Inter,sans-serif]'>
             <h1>What theyve said</h1>
@@ -73,7 +74,7 @@ export default function Phase1() {
 
          
         </div>
-        <div className='md:w-[49%] w-[100%] border-l-2 border-[black]'>
+        <div className='md:w-[49%] w-[100%] border-l-2 border-[black] border-r-2'>
           <Image className='w-[90%]  mt-[2rem] mb-[2rem] mx-auto flex items-center' src={div6} width='' height='' alt='not-found'/>
         </div>
       </div>
@@ -81,5 +82,7 @@ export default function Phase1() {
 
       
     </div>
+    </div>
+
   )
 }

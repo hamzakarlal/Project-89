@@ -5,29 +5,61 @@ import Menu from 'public/assets/menu.png'
 import Frame from 'public/assets/Frame.png'
 import div from 'public/assets/div.png'
 import React, { useState } from 'react';
+import Icon8 from 'public/assets/cross.png'
 
 
 export default function Header() {
   <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-  const [showDiv, setShowDiv] = useState(false);
+  const [showDiv, setShowDiv] = useState(null);
 
-  const handleClick = () => {
-    setShowDiv(!showDiv);
+  const handleClick = (divId) => {
+    setisdivisible(true); 
+    setShowDiv(divId); 
   }
+  const [isdivisible, setisdivisible] = useState(true);
+  const hideDiv = () =>{
+    setisdivisible(false);
+  }
+ 
+
   return (
-    <div>
+    <div className='bg-[#F5EEE3]'>
       <div className=" max-w-[1400px] mx-auto">
       {/*  */}
       <div
-        className="w-[100%] bg-[#F7F1E8] grid grid-cols-2 px-[1.6rem] h-[64px] items-center fixed border-b-2 border-[grey] z-50"
+        className="w-[100%] 2xl:w-[1400px] mx-auto bg-[#F7F1E8] grid grid-cols-2 px-[1.6rem] h-[64px] items-center fixed  border-b-2 border-[grey] z-50"
       >
         <div className=" flex ">
           <div className="flex ">
             <div className='md:hidden block'>
-            <Image className='w-[70%]' src={Menu} width="" height="" alt='not-found' onClick={handleClick}/>
-            {showDiv && <div className=' pl-[5px] rounded-3xl border-[1px]  absolute bg-[#f7f7f7] w-[200px]  h-[auto]'>
+            <Image className='w-[70%] App2' src={Menu} width="" height="" alt='not-found' onClick={handleClick}/>
+
+            </div>
             <ul
-              className=" font-[Inter,sans-serif] text-[13px] font-[500] ml-[10px]   "
+              className=" font-[Inter,sans-serif] md:flex justify-center gap-[2.8rem] xl:text-[18px] md:text-[13px] hidden   "
+            >
+              <li>Shop</li>
+              <li>Philosophy</li>
+              <li>Gifting</li>
+              <li>Journal</li>
+              <li className='hidden lg:block'>Our Story</li>
+            </ul>
+
+          </div>
+        </div>
+        <div className=" flex justify-between font-[Inter,sans-serif] xl:text-[18px] lg:text-[13.5px]">
+        <div className="flex justify-start ">
+              <Image className='w-[100%] h-[auto] mx-auto ml-[-28px]' src={Frame} width='' height='' alt='not-found'/>
+            </div>
+          <h1 className=''>Cart</h1>
+        </div>
+      </div>
+     <div className='w-[100%] h-[100%] fixed  '>
+                  {showDiv && isdivisible &&
+                  <div className='App  pl-[5px]  border-[1px] flex justify-between top-[64px]    transition origin-left duration-500 bg-[#f7f7f7] w-[230px]  h-[300px]'>
+             <div>
+             <ul
+              className=" font-[Inter,sans-serif] text-[13px] font-[500] ml-[10px] mt-[5rem]   "
             >
               <h1 className='mt-[5px] mb-[5px] text-[grey] font-[300] '>Our Services</h1>
               <div className='hover:text-[white] hover:bg-[grey] rounded-3xl w-[80px]  '>
@@ -46,35 +78,20 @@ export default function Header() {
               <li className='ml-[5px]'>Our Story</li>  
               </div>
             </ul>
+             </div>    
+             <div>
+             <Image className='w-[70%] h-[auto] mx-auto ' onClick={hideDiv} src={Icon8} width='' height='' alt='not-found' />
+             </div>   
+
                
-              </div>}
-            </div>
-            <ul
-              className=" font-[Inter,sans-serif] md:flex justify-center gap-[2.8rem] xl:text-[18px] md:text-[13px] hidden   "
-            >
-              <li>Shop</li>
-              <li>Philosophy</li>
-              <li>Gifting</li>
-              <li>Journal</li>
-              <li className='hidden lg:block'>Our Story</li>
-            </ul>
-
-          </div>
-        </div>
-        <div className=" flex justify-between font-[Inter,sans-serif] xl:text-[18px] lg:text-[13.5px]">
-        <div className="flex justify-start ">
-              <Image className='w-[69%] h-[auto] mx-auto ml-[-28px]' src={Frame} width='' height='' alt='not-found'/>
-            </div>
-          <h1 className=''>Cart</h1>
-        </div>
-      </div>
-
+              </div>}  
+     </div>
      {/* hero */}
       <div className="bg-[#F5EEE3] w-[100%] mx-auto md:flex  pt-[4rem] ">
         <div className=" md:w-[51%] w-[100%] border-r-2 border-[grey]" >
           <Image src={div} width="" height="" alt='not-found'/>
         </div>
-        <div className="border-b-2 border-[grey] md:w-[49%] w-[100%] flex justify-center text-center lg:items-center md:pt-[8rem]">
+        <div className="border-b-2 border-[grey] md:w-[49%] w-[100%] border-r flex justify-center text-center lg:items-center md:pt-[8rem]">
           <div className="center h-[10%] items-center leading-[3rem] pb-[2rem] md:pb-[0] pt-[2rem] md:pt-0 ">
             <div>
               <h1 className="font-[Inter,sans-serif] text-[24px] tracking-[1px] font-[500]">

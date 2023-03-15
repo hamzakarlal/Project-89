@@ -8,8 +8,9 @@ import Micfour from 'public/assets/mic4.png'
 export default function Ending() {
     <link rel="preconnect" href="https://fonts.googleapis.com"></link>
   return (
-    <div className='max-w-[1400px] mx-auto'>
-        <div className='bg-[#F7F1E8] w-[100%] mx-auto border-b-2 border-[black]'>
+    <div className='bg-[#F7F1E8] '>
+          <div className='max-w-[1400px] mx-auto '>
+        <div className='bg-[#F7F1E8] w-[100%] mx-auto '>
           <div className=' '>
           <div className='text-[22px] ml-[2rem] font-[Inter,sans-serif] '>
             <h1 className='pt-[2rem]'>Share your journey #eymnaturals</h1>
@@ -35,7 +36,9 @@ export default function Ending() {
           </div>    
         </div>
         {/* 2 */}
-        <div className='bg-[#FFFF44] w-[100%] mx-auto border-b-2 border-[black] flex justify-center items-center pb-[2rem]'>
+
+    </div>
+    <div className='bg-[#FFFF44] w-[100%] mx-auto border-b-2 border-[black] border-t-2 flex justify-center items-center pb-[2rem]'>
           <div className=' '>
             <div className='lg:text-[47px] md:text-[37px] sm:text-[27px] text-[24px] md:ml-[2rem] ml-[0] mt-[6rem] font-[Inter,sans-serif]  font-[500] leading-tight text-center'>
                 <h1>Join the family — sign up to our <br className='hidden md:block'/> newsletter for updates on all things Eym.</h1>
@@ -51,6 +54,9 @@ export default function Ending() {
 
           </div>    
         </div>
+
     </div>
+    
+
   )
 }

@@ -2,3 +2,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.App{
+    position: absolute;
+    animation-name: polite;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes polite {
+    0%   { left:-200px; top:0px;}
+    25%  { left:1px; top:0px;}
+  
+  }
